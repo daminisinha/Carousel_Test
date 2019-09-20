@@ -37,12 +37,12 @@ module.exports = {
 
         ]
     },
-    // plugins: [
-    //     new CopyWebpackPlugin([{
-    //         from: `./src/images/`,
-    //         to: `./images/`
-    //     }])
-    // ],
+    plugins: [
+        new CopyWebpackPlugin([{
+            from: `./src/client/images`,
+            to: `./images/`
+        }])
+    ],
     optimization:{
         splitChunks: {
             // include all types of chunks

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Hidden, Visible } from 'react-grid-system';
-import Slide from '../Slide'
-import Thumbnails from '../Thumbnails';
+import Slide from '../Slider'
+import Thumbnails from '../ThumbnailsContainer';
 import NavigateButtonContainer from '../NavigateButtonContainer'
-import RightArrow from '../RightArrow'
-import LeftArrow from '../LeftArrow'
+import RightArrow from '../RightArrowButton'
+import LeftArrow from '../LeftArrowButton'
 import './index.scss'
 
 

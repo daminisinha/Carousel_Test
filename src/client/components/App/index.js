@@ -1,7 +1,7 @@
 import React, { Component,Fragment } from 'react';
 import Header from '../Header'
 import Carousel from '../Carousel'
-import { getImages } from '../../../server/api';
+import { getImages } from '../../../server/api/api';
 import './index.scss'
 class App extends Component {
     constructor(props) {
