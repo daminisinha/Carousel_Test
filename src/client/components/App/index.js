@@ -3,15 +3,17 @@ import Header from '../Header'
 import Carousel from '../Carousel'
 import { getImages } from '../../../server/api/api';
 import './index.scss'
+
+//App Component (Parent Component)
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = { images: null }
     }
-    componentDidMount() {
 
+    componentDidMount() {
         let self = this;
-        //Explicitly sending 6 images.
+        //Sending 6 images
         getImages()
             .then((results) => {
                 self.setState({ images: results.slice(0, 6) })

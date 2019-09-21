@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// Navigate button component
 class NavigateButton extends Component {
 
     render() {

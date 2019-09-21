@@ -1,11 +1,9 @@
 import axios from 'axios'
-const API_KEY = "9656065-a4094594c34f9ac14c7fc4c39";
-const API_URL = "https://pixabay.com/api/";
-let keyword = "beautiful+flower";
-let type = "photo";
+import {API_URL,API_KEY,API_KEYWORD,API_TYPE} from '../apiConfig/config'
 
+//Axios call to get images
 export const getImages = function () {
-    return axios.get(`${API_URL}?key=${API_KEY}&q=${keyword}&image_type=${type}`)
+    return axios.get(`${API_URL}?key=${API_KEY}&q=${API_KEYWORD}&image_type=${API_TYPE}`)
         .then((results) => {
             return results.data.hits;
         })

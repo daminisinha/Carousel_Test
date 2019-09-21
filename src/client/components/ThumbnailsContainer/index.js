@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Row, Col, Visible } from 'react-grid-system';
 import Slide from '../Slider'
 import './index.scss'
+
+//Thumbnails component
 class Thumbnails extends Component {
     render() {
         let { images,onClickHandler } = this.props;
@@ -9,23 +11,22 @@ class Thumbnails extends Component {
         for(let i=0;i<images.length;i++){
             let img = images[i]
             slides.push(
-                <li className="thumbnails-item" key={img.id}><Slide 
+                <li className="thumbnails__item" key={img.id}><Slide 
                           onClickHandler={onClickHandler}
                           index={i}
                           image={img}
                           width={img.previewWidth}
                           height="100" />
-                    <h5>By: {img.user}</h5>
+                    <h5>Author: {img.user}</h5>
                 </li> 
             )
         }
         
         return (
-            <Row className="thumbnails">
-                <Col  lg={12} xl={12}>
-                     
+            <Row className="thumbnails_row">
+                <Col  lg={12} xl={12}>   
                     <Visible lg xl>
-                        <ul className="thumbnails-list">
+                        <ul className="thumbnails__list">
                              {slides}
                        </ul>
                     </Visible>

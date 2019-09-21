@@ -1,9 +1,10 @@
 @import '../../styles/variables.scss';
-h1{
+
+.carousel_header{
+    height:40px;
+}
+.carousel_header>h1{
     color:$app-color;
     padding-left:20px;
     margin: 5px;
-}
-.header{
-    height:40px;
 }

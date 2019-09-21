@@ -1,8 +1,10 @@
-.thumbnails{
+@import '../../styles/variables.scss';
+
+.thumbnails__row{
     text-align:center;
 }
 
-.thumbnails-list{
+.thumbnails__list{
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -11,7 +13,11 @@
     margin-bottom:0px;
 }
 
-.thumbnails-item{
+.thumbnails__item{
     cursor:pointer;
 }
-
+.thumbnails__item > h5{
+    color:$author-color;
+    font-size: 14px;
+    font-weight:800;
+}

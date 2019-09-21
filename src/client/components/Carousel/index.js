@@ -7,7 +7,7 @@ import RightArrow from '../RightArrowButton'
 import LeftArrow from '../LeftArrowButton'
 import './index.scss'
 
-
+//Carousel Component
 export default class Carousel extends Component {
     constructor(props) {
         super(props);
@@ -16,6 +16,7 @@ export default class Carousel extends Component {
         this.prevImage = this.prevImage.bind(this);
         this.setCurrentImageIndex = this.setCurrentImageIndex.bind(this)
     }
+    //Function for next image
     nextImage(e) {
         if (this.props.images.length - 1 === this.state.activeIndex) {
             this.setState({ activeIndex: 0 })
@@ -23,7 +24,7 @@ export default class Carousel extends Component {
             this.setState({ activeIndex: this.state.activeIndex + 1 })
         }
     }
-
+    //Function for previous image
     prevImage(e) {
         if (0 === this.state.activeIndex) {
             this.setState({ activeIndex: this.props.images.length - 1 })
@@ -33,6 +34,7 @@ export default class Carousel extends Component {
         }
 
     }
+    //Function to set current image
     setCurrentImageIndex(index) {
 
         if (index !== 'undefined' && index >= 0) {
@@ -44,14 +46,14 @@ export default class Carousel extends Component {
         let image = this.props.images[this.state.activeIndex]
         return (
 
-            <Container fluid={true} className="carousel-container">
+            <Container fluid={true} className="carousel__container">
                 <Thumbnails images={this.props.images} onClickHandler={this.setCurrentImageIndex} />
                 <Row justify="center">
                     <Col xs={12} sm={12} lg={10} md={10}>
 
-                        <ul className="carousel">
+                        <ul className="carousel__list_style">
 
-                            <li className="center-slide">
+                            <li className="list_style_slide">
                             <Visible xs sm md>
                                     <LeftArrow prevImage={this.prevImage} />
                                 </Visible>
@@ -65,7 +67,7 @@ export default class Carousel extends Component {
                                 <Visible xs sm md>
                                     <RightArrow nextImage={this.nextImage} />
                                 </Visible>
-                                <h3>By {image.user}</h3>
+                                <h3>Author: {image.user}</h3>
                             </li>
                         </ul>
                         <NavigateButtonContainer prevImage={this.prevImage} nextImage={this.nextImage} />

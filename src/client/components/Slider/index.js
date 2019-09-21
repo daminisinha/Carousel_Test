@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import {Visible} from 'react-grid-system'
-class Slide extends Component {
+
+//Slider component
+class Slider extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -22,4 +24,4 @@ class Slide extends Component {
     }
 }
 
-export default Slide;
+export default Slider;
