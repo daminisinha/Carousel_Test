@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Right arrow button renders 1`] = `
+<img
+  alt="Right Arrow"
+  className="carousel__right__arrow float-right"
+  height="60%"
+  src="./images/arrow.svg"
+  width="20"
+/>
+`;

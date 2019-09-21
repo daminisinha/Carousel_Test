@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigate Button container renders 1`] = `
+<ul
+  className="desktop-navigate-buttons"
+>
+  <li
+    className="button-navigate border-prev-button"
+  >
+    <Visible
+      lg={true}
+      md={false}
+      sm={false}
+      xl={true}
+      xs={false}
+    >
+      <NavigateButton
+        buttonText="Prev"
+      />
+    </Visible>
+  </li>
+  <li
+    className="button-navigate border-next-button"
+  >
+    <Visible
+      lg={true}
+      md={false}
+      sm={false}
+      xl={true}
+      xs={false}
+    >
+      <NavigateButton
+        buttonText="Next"
+      />
+    </Visible>
+  </li>
+</ul>
+`;

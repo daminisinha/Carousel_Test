@@ -6,8 +6,9 @@
   "scripts": {
     "test": "jest",
     "start:dev": "webpack-dev-server --mode development --config webpack.dev.js --open",
-    "start:prod": "npm run build && node ./src/server.js",
-    "build": "webpack --config webpack.prod.js --mode production"
+    "start:prod": "npm run build && node ./src/server/server.js",
+    "build": "webpack --config webpack.prod.js --mode production",
+    "test:coverage": "jest --coverage --colors --coverageDirectory=tests/coverage/jest"
   },
   "keywords": [
     "carousel"
@@ -29,6 +30,7 @@
     "react-dom": "^16.6.3",
     "react-grid-system": "^4.3.1",
     "regenerator-runtime": "^0.13.1",
+    "supertest": "^4.0.2",
     "webpack-dev-server": "^3.1.10"
   },
   "devDependencies": {

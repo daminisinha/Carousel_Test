@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Thumbnail renders 1`] = `
+<Row
+  align="normal"
+  className="thumbnails_row"
+  component="div"
+  debug={false}
+  gutterWidth={null}
+  justify="start"
+  nogutter={false}
+  nowrap={false}
+  style={Object {}}
+>
+  <Col
+    component="div"
+    debug={false}
+    lg={12}
+    md={null}
+    offset={Object {}}
+    pull={Object {}}
+    push={Object {}}
+    sm={null}
+    style={Object {}}
+    xl={12}
+    xs={null}
+  >
+    <Visible
+      lg={true}
+      md={false}
+      sm={false}
+      xl={true}
+      xs={false}
+    >
+      <ul
+        className="thumbnails__list"
+      >
+        <li
+          className="thumbnails__item"
+        >
+          <Slider
+            height="100"
+            image={1}
+            index={0}
+          />
+          <h5>
+            Author: 
+          </h5>
+        </li>
+        <li
+          className="thumbnails__item"
+        >
+          <Slider
+            height="100"
+            image={2}
+            index={1}
+          />
+          <h5>
+            Author: 
+          </h5>
+        </li>
+        <li
+          className="thumbnails__item"
+        >
+          <Slider
+            height="100"
+            image={3}
+            index={2}
+          />
+          <h5>
+            Author: 
+          </h5>
+        </li>
+        <li
+          className="thumbnails__item"
+        >
+          <Slider
+            height="100"
+            image={4}
+            index={3}
+          />
+          <h5>
+            Author: 
+          </h5>
+        </li>
+        <li
+          className="thumbnails__item"
+        >
+          <Slider
+            height="100"
+            image={5}
+            index={4}
+          />
+          <h5>
+            Author: 
+          </h5>
+        </li>
+        <li
+          className="thumbnails__item"
+        >
+          <Slider
+            height="100"
+            image={6}
+            index={5}
+          />
+          <h5>
+            Author: 
+          </h5>
+        </li>
+      </ul>
+    </Visible>
+  </Col>
+</Row>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider renders 1`] = `
+<Fragment>
+  <Visible
+    lg={true}
+    md={true}
+    sm={false}
+    xl={true}
+    xs={false}
+  >
+    <img
+      alt="image"
+      onClick={[Function]}
+    />
+  </Visible>
+  <Visible
+    lg={false}
+    md={false}
+    sm={true}
+    xl={false}
+    xs={true}
+  >
+    <img
+      alt="image"
+      onClick={[Function]}
+    />
+  </Visible>
+</Fragment>
+`;

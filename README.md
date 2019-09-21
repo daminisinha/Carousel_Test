@@ -25,6 +25,7 @@ A Carousel using ReactJS
     npm run start:prod  //Open http://localhost:3000
     npm run start:dev   //Open http://localhost:8080
     npm run test       //to run test cases
+    npm run test:coverage    //to generate coverage of test cases
   ```
 
 
