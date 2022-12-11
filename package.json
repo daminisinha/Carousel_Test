@@ -22,7 +22,7 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-to-json": "^3.3.4",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-mock-axios": "^2.1.11",
